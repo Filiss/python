@@ -1,5 +1,2 @@
-cidade = input('Digite o nome da cidade: ')
-
-cid = cidade.find('Santo')
-
-print(f'A cidade começa com Santo? {cid == 0}')
+cidade = str(input('Digite o nome da cidade: ')).strip()
+print(f'A cidade começa com Santo? {cidade[:5].lower() == "santo"}')

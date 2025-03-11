@@ -1,5 +1,3 @@
-nome = input('Digite seu nome completo:')
+nome = str(input('Digite seu nome completo:')).strip()
 
-nm = nome.find('Silva')
-
-print(f'Seu nome tem Silva? {nm != -1}')
+print(f'Seu nome tem Silva? {'silva' in nome.lower()}')
