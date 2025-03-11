@@ -7,6 +7,6 @@ aluno4 = input('Digite o nome do quarto aluno:')
 
 alunos = [aluno1, aluno2, aluno3, aluno4]
 
-lista = random.choice(alunos)
+random.shuffle(alunos)
 
-print(f'A ordem para a apresentação será: {lista}')
+print(f'A ordem para a apresentação será: {alunos}')
